@@ -39,5 +39,7 @@ $ npm start
 ---
 
 **Author:** Lucas Tadeu Correa de Oliveira
+
 **E-mail:** [lucas.nhl@gmail.com](mailto:lucas.nhl@gmail.com)
+
 [LinkedIn](https://www.linkedin.com/in/lucascorrea31/)
