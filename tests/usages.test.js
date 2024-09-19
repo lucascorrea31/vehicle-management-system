@@ -3,7 +3,7 @@ const app = require("../app");
 const Usage = require("../models/usage");
 const Vehicle = require("../models/vehicle");
 const Driver = require("../models/driver");
-const connectTestDB = require("../testConnection");
+const connectTestDB = require("./testConnection");
 
 require("dotenv").config(); // Carrega as variáveis de ambiente do .env
 
