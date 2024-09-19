@@ -36,6 +36,12 @@ $ npm test
 $ npm start
 ```
 
+> OBS.: Na raiz do projeto tem arquivos para testar o projeto utilizando RapidAPI/Postman/Insomnia/cURL.
+
+- RapidAPI: `API_routes_test.paw`
+- Postman/Insomnia: `API_routes_test.paw.json`
+- cURL: `API_routes_test.paw.sh`
+
 ---
 
 **Author:** Lucas Tadeu Correa de Oliveira
