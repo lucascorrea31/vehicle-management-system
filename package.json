@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "debug": "DEBUG=vehicle-management-system:* npm start",
+    "start": "DEBUG=vehicle-management-system:* node ./bin/www",
     "test": "jest"
   },
   "jest": {
