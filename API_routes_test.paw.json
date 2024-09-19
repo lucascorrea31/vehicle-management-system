@@ -1,0 +1,595 @@
+{
+  "info": {
+    "name": "API_routes_test.paw",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Driver",
+      "item": [
+        {
+          "name": "LIST drivers",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{HOST}}/drivers",
+              "query": [
+                {
+                  "key": "name",
+                  "value": "José",
+                  "disabled": true,
+                  "description": null
+                }
+              ],
+              "protocol": null,
+              "host": [
+                "{{HOST}}/drivers"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "GET driver by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{HOST}}/drivers/66eb72f88a92bc3ad1fa1c63",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/drivers/66eb72f88a92bc3ad1fa1c63"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "CREATE new driver",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{HOST}}/drivers",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/drivers"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false,
+              "raw": "{\n  \"name\": \"João César\"\n}"
+            },
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "UPDATE driver",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{HOST}}/drivers/66eb72f88a92bc3ad1fa1c63",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/drivers/66eb72f88a92bc3ad1fa1c63"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false,
+              "raw": "{\n  \"name\": \"João César da Silva\"\n}"
+            },
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE driver",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{HOST}}/drivers/66eb72f88a92bc3ad1fa1c63",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/drivers/66eb72f88a92bc3ad1fa1c63"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false,
+              "raw": "{\n  \"licensePlate\": \"HKL2H64\",\n  \"color\": \"white\",\n  \"brand\": \"Honda Motos\"\n}"
+            },
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    },
+    {
+      "name": "Usage",
+      "item": [
+        {
+          "name": "LIST usages",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{HOST}}/usages?name=Jos%C3%A9",
+              "query": [
+                {
+                  "key": "name",
+                  "value": "José",
+                  "disabled": false,
+                  "description": null
+                }
+              ],
+              "protocol": null,
+              "host": [
+                "{{HOST}}/usages"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "INITIATE new usage",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{HOST}}/usages",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/usages"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false,
+              "raw": "{\n  \"reason\": \"Teste\",\n  \"driver\": \"66eb75b08a92bc3ad1fa1c75\",\n  \"vehicle\": \"66eb72598a92bc3ad1fa1c5c\",\n  \"startDate\": \"2024-09-28T21:54:00\"\n}"
+            },
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "FINISH usage",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{HOST}}/usages/66eb768d8a92bc3ad1fa1c85/end",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/usages/66eb768d8a92bc3ad1fa1c85/end"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false,
+              "raw": "{\n  \"name\": \"João César da Silva\"\n}"
+            },
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    },
+    {
+      "name": "Vehicle",
+      "item": [
+        {
+          "name": "LIST vehicles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{HOST}}/vehicles",
+              "query": [
+                {
+                  "key": "color",
+                  "value": "white",
+                  "disabled": true,
+                  "description": null
+                },
+                {
+                  "key": "brand",
+                  "value": "Honda",
+                  "disabled": true,
+                  "description": null
+                }
+              ],
+              "protocol": null,
+              "host": [
+                "{{HOST}}/vehicles"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "GET vehicle by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{HOST}}/vehicles/66eb719c8a92bc3ad1fa1c52",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/vehicles/66eb719c8a92bc3ad1fa1c52"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": null,
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "CREATE new vehicle",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{HOST}}/vehicles",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/vehicles"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false,
+              "raw": "{\n  \"licensePlate\": \"HKL2H64\",\n  \"color\": \"black\",\n  \"brand\": \"Honda\"\n}"
+            },
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "UPDATE vehicle",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{HOST}}/vehicles/66eb719c8a92bc3ad1fa1c52",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/vehicles/66eb719c8a92bc3ad1fa1c52"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false,
+              "raw": "{\n  \"licensePlate\": \"HKL2H64\",\n  \"color\": \"white\",\n  \"brand\": \"Honda Motos\"\n}"
+            },
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE vehicle",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{HOST}}/vehicles/66eb719c8a92bc3ad1fa1c52",
+              "query": null,
+              "protocol": null,
+              "host": [
+                "{{HOST}}/vehicles/66eb719c8a92bc3ad1fa1c52"
+              ],
+              "port": null,
+              "path": null
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "disabled": false,
+                "description": null
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false,
+              "raw": "{\n  \"licensePlate\": \"HKL2H64\",\n  \"color\": \"white\",\n  \"brand\": \"Honda Motos\"\n}"
+            },
+            "auth": null
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false,
+            "followOriginalHttpMethod": false,
+            "followAuthorizationHeader": false
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    }
+  ]
+}
